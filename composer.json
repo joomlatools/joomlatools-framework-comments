@@ -1,0 +1,26 @@
+{
+    "name": "nooku/nooku-activities",
+    "type": "nooku-component",
+    "license": "GPLv3",
+    "description": "A reusable component for logging and exposing activity streams",
+    "keywords": [
+        "nooku",
+        "components",
+        "activities",
+        "streams"
+    ],
+    "homepage": "https://github.com/nooku/nooku-activities",
+    "authors": [
+        {
+            "name": "Timble",
+            "email": "info@timble.net",
+            "homepage": "http://www.timble.net"
+        }
+    ],
+    "require": {
+        "nooku/nooku-framework": "~2.0"
+    },
+    "autoload": {
+        "files": ["autoload.php"]
+    }
+}
