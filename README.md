@@ -50,7 +50,7 @@ See the list of [contributors](https://github.com/nooku/nooku-comments/contribut
 
 ## License
 
-The The `nooku-comments` component is free and open-source software licensed under the [GPLv3 license](gplv3-license).
+The `nooku-comments` component is free and open-source software licensed under the [GPLv3 license](gplv3-license).
 
 [gitflow-model]: http://nvie.com/posts/a-successful-git-branching-model/
 [gplv3-license]: https://github.com/nooku/nooku-framework/blob/master/LICENSE.txt
