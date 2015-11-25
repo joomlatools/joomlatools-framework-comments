@@ -18,7 +18,8 @@
         }
     ],
     "require": {
-        "nooku/nooku-framework": "~2.0"
+        "nooku/nooku-framework": "~2.0",
+        "nooku/nooku-ckeditor": "dev-master"
     },
     "autoload": {
         "files": ["autoload.php"]

@@ -13,7 +13,13 @@
         <input type="hidden" name="row" value="<?= $state->row ?>" />
         <input type="hidden" name="table" value="<?= $state->table ?>" />
 
-        <textarea type="text" name="text" placeholder="<?= translate('Add new comment here ...') ?>" id="new-comment-text"></textarea>
+        <?php echo helper('com:comments.editor.display', array(
+            'editor' => 'com:ckeditor.controller.editor',
+            'name'   => 'text',
+            'id'     => 'new-comment-text',
+            'text'   => 'Add new comment here ...'
+        )) ?>
+
         <br />
         <input class="button" type="submit" value="<?= translate('Submit') ?>"/>
     </form>
