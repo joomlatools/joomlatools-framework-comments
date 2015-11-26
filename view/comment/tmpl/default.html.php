@@ -9,18 +9,23 @@
 ?>
 
 <div id="comments-comment-form">
-    <form action="<?= route('row='.@$state->row.'&table='.$state->table) ?>" method="post">
-        <input type="hidden" name="row" value="<?= $state->row ?>" />
-        <input type="hidden" name="table" value="<?= $state->table ?>" />
+    <form action="<?php echo route('row='.@$state->row.'&table='.$state->table) ?>" method="post">
+        <input type="hidden" name="row" value="<?php echo $state->row ?>" />
+        <input type="hidden" name="table" value="<?php echo $state->table ?>" />
 
-        <?php echo helper('com:comments.editor.display', array(
-            'editor' => 'com:ckeditor.controller.editor',
-            'name'   => 'text',
-            'id'     => 'new-comment-text',
-            'text'   => 'Add new comment here ...'
-        )) ?>
+        <?php
+        echo object('com:ckeditor.controller.editor')->render(
+                array(
+                    'name'    => 'text',
+                    'text'    => 'Add new comment here ...',
+                    'attribs' => array(
+                        'class' => 'ckeditor-required'
+                    )
+                )
+            );
+        ?>
 
         <br />
-        <input class="button" type="submit" value="<?= translate('Submit') ?>"/>
+        <input class="button" type="submit" value="<?php echo translate('Submit') ?>"/>
     </form>
 </div>
