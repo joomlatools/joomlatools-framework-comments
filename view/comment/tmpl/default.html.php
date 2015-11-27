@@ -18,6 +18,7 @@
                 array(
                     'name'    => 'text',
                     'text'    => 'Add new comment here ...',
+                    'toolbar' => 'Basic',
                     'attribs' => array(
                         'class' => 'ckeditor-required'
                     )
