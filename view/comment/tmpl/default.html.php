@@ -6,10 +6,12 @@
  * @license     GNU GPLv3 <http://www.gnu.org/licenses/gpl.html>
  * @link        http://github.com/nooku/nooku-comments for the canonical source repository
  */
+
+$route = ($state->route) ? "{$state->route}&row={$state->row}&table={$state->table}" : "row={$state->row}&table={$state->table}";
 ?>
 
 <div id="comments-comment-form">
-    <form action="<?php echo route('row='.@$state->row.'&table='.$state->table) ?>" method="post">
+    <form action="<?php echo route($route) ?>" method="post">
         <input type="hidden" name="row" value="<?php echo $state->row ?>" />
         <input type="hidden" name="table" value="<?php echo $state->table ?>" />
 
