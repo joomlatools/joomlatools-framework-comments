@@ -1,15 +1,14 @@
 {
-    "name": "nooku/nooku-activities",
+    "name": "nooku/nooku-comments",
     "type": "nooku-component",
     "license": "GPLv3",
-    "description": "A reusable component for logging and exposing activity streams",
+    "description": "A reusable component for making and listing comments",
     "keywords": [
         "nooku",
         "components",
-        "activities",
-        "streams"
+        "comments"
     ],
-    "homepage": "https://github.com/nooku/nooku-activities",
+    "homepage": "https://github.com/nooku/nooku-comments",
     "authors": [
         {
             "name": "Timble",

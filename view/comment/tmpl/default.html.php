@@ -11,12 +11,11 @@ $route = ($state->route) ? "{$state->route}&row={$state->row}&table={$state->tab
 ?>
 
 <div id="comments-comment-form">
-    <form action="<?php echo route($route) ?>" method="post">
-        <input type="hidden" name="row" value="<?php echo $state->row ?>" />
-        <input type="hidden" name="table" value="<?php echo $state->table ?>" />
+    <form action="<?= route($route) ?>" method="post">
+        <input type="hidden" name="row" value="<?= $state->row ?>" />
+        <input type="hidden" name="table" value="<?= $state->table ?>" />
 
-        <?php
-        echo object('com:ckeditor.controller.editor')->render(
+        <?= object('com:ckeditor.controller.editor')->render(
                 array(
                     'name'    => 'text',
                     'text'    => 'Add new comment here ...',
@@ -29,6 +28,6 @@ $route = ($state->route) ? "{$state->route}&row={$state->row}&table={$state->tab
         ?>
 
         <br />
-        <input class="button" type="submit" value="<?php echo translate('Submit') ?>"/>
+        <input class="button" type="submit" value="<?= translate('Submit') ?>"/>
     </form>
 </div>
