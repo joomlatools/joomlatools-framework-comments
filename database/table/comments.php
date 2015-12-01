@@ -21,7 +21,7 @@ class ComCommentsDatabaseTableComments extends KDatabaseTableAbstract
             'name'      => 'comments',
             'behaviors' => array('creatable', 'modifiable', 'lockable', 'identifiable'),
             'filters'   => array(
-                'text'   => array('html'),
+                'text'   => array('trim', 'html'),
             )
         ));
 
