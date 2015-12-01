@@ -20,8 +20,8 @@ class ComCommentsDatabaseTableComments extends KDatabaseTableAbstract
         $config->append(array(
             'name'      => 'comments',
             'behaviors' => array('creatable', 'modifiable', 'lockable', 'identifiable'),
-            'filters' => array(
-                'text'   => array('html', 'tidy'),
+            'filters'   => array(
+                'text'   => array('trim', 'html'),
             )
         ));
 
