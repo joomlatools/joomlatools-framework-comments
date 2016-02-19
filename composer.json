@@ -22,5 +22,10 @@
     },
     "autoload": {
         "files": ["autoload.php"]
+    },
+    "nooku-component": {
+        "identifier": "com:comments",
+        "name": "comments",
+        "version": "2.0.0"
     }
 }
