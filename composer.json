@@ -1,5 +1,5 @@
 {
-    "name": "nooku/nooku-comments",
+    "name": "joomlatools/framework-comments",
     "type": "nooku-component",
     "license": "GPLv3",
     "description": "A reusable component for making and listing comments",
@@ -8,7 +8,7 @@
         "components",
         "comments"
     ],
-    "homepage": "https://github.com/nooku/nooku-comments",
+    "homepage": "https://github.com/joomlatools/joomlatools-framework-comments",
     "authors": [
         {
             "name": "Timble",
@@ -17,8 +17,8 @@
         }
     ],
     "require": {
-        "nooku/nooku-framework": "~2.0",
-        "nooku/nooku-ckeditor": "dev-master"
+        "joomlatools/framework": "~2.0",
+        "joomlatools/framework-ckeditor": "dev-master"
     },
     "autoload": {
         "files": ["autoload.php"]
