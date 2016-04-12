@@ -10,6 +10,11 @@
     ],
     "homepage": "https://github.com/joomlatools/joomlatools-framework-comments",
     "authors": [
+         {
+            "name": "Johan Janssens",
+            "email": "johan@janssens.me",
+            "homepage": "http://about.me/johanjanssens"
+        },
         {
             "name": "Timble",
             "email": "info@timble.net",
