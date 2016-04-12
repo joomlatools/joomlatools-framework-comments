@@ -13,7 +13,7 @@ This is a re-usable component for implementing basic commenting functionality fo
 Install using [Composer](https://getcomposer.org/). Go to the root directory of your Joomla installation in command line and execute this command:
 
 ```
-composer require joomlatools/joomlatools-framework-comments:2.*
+composer require joomlatools/framework-comments:2.*
 ```
 
 The component will be installed in the `vendor` folder of the root directory of your Joomla site. The framework will make sure that the component is bootstrapped from that location and made available to other components extending it or just
