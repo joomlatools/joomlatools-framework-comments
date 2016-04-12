@@ -4,8 +4,8 @@
     "license": "GPLv3",
     "description": "A reusable component for making and listing comments",
     "keywords": [
-        "nooku",
-        "components",
+        "joomla",
+        "component",
         "comments"
     ],
     "homepage": "https://github.com/joomlatools/joomlatools-framework-comments",
