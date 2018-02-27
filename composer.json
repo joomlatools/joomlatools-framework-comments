@@ -1,7 +1,7 @@
 {
     "name": "joomlatools/framework-comments",
     "type": "nooku-component",
-    "license": "GPLv3",
+    "license": "GPL-3.0-only",
     "description": "A reusable component for making and listing comments",
     "keywords": [
         "joomla",
