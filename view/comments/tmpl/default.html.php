@@ -8,7 +8,7 @@
  */
 ?>
 
-<style src="assets://comments/css/comments-default.css" />
+<ktml:style src="assets://comments/css/comments-default.css" />
 
 <div id="list" class="-koowa-box-flex">
     <form action="<?= route()?>" method="post" name="adminForm">
@@ -46,7 +46,7 @@
             <tfoot>
             <tr>
                 <td colspan="20">
-                    <?= helper('com:application.paginator.pagination', array('total' => $total)) ?>
+                    <?= helper('com:application.paginator.pagination', array('total' => parameters()->total)) ?>
                 </td>
             </tr>
             </tfoot>
