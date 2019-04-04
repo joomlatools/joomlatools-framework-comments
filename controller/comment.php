@@ -19,7 +19,8 @@ abstract class ComCommentsControllerComment extends KControllerModel
     protected function _initialize(KObjectConfig $config)
     {
         $config->append(array(
-            'model' => 'com:comments.model.comments'
+            'model' => 'com:comments.model.comments',
+            'table' => $config->object_identifier->getPackage()
         ));
 
         //Alias the permission
@@ -45,6 +46,8 @@ abstract class ComCommentsControllerComment extends KControllerModel
             $alias            = $layout;
             $alias['package'] = 'comments';
 
+            unset($alias['domain']);
+
             $this->getObject('manager')->registerAlias($alias, $layout);
         }
 
@@ -56,8 +59,8 @@ abstract class ComCommentsControllerComment extends KControllerModel
         $request = parent::getRequest();
 
         //Force set the 'table' in the request
-        $request->query->table = $this->getIdentifier()->package;
-        $request->data->table  = $this->getIdentifier()->package;
+        $request->query->table = $this->getConfig()->table;
+        $request->data->table  = $this->getConfig()->table;
 
         return $request;
     }
